@@ -1,0 +1,236 @@
+/* ===================================================================
+   Salesforce Token Testing Tool — Popup Styles
+   =================================================================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 380px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: #1e293b;
+    background: #f8fafc;
+}
+
+/* ----------------------- Container ----------------------- */
+.popup-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+/* ----------------------- Header ----------------------- */
+.popup-header {
+    text-align: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.popup-header h1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.popup-header .subtitle {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* ----------------------- Sections ----------------------- */
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.badge {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: #e0f2fe;
+    color: #0284c7;
+}
+
+/* ----------------------- Form Fields ----------------------- */
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.field label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.field input {
+    height: 32px;
+    padding: 0 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 12px;
+    color: #1e293b;
+    background: #fff;
+    outline: none;
+    transition: border-color 0.15s;
+}
+
+.field input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15);
+}
+
+.field input::placeholder {
+    color: #94a3b8;
+}
+
+.hint {
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+/* ----------------------- Custom Token Row ----------------------- */
+.custom-token-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 28px;
+    gap: 6px;
+    align-items: center;
+}
+
+.custom-token-row input {
+    height: 30px;
+    padding: 0 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 12px;
+    color: #1e293b;
+    background: #fff;
+    outline: none;
+    transition: border-color 0.15s;
+}
+
+.custom-token-row input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15);
+}
+
+.custom-token-row input::placeholder {
+    color: #94a3b8;
+}
+
+.remove-token-btn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 6px;
+    background: #fee2e2;
+    color: #ef4444;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s;
+}
+
+.remove-token-btn:hover {
+    background: #fecaca;
+}
+
+/* ----------------------- Buttons ----------------------- */
+.btn {
+    height: 34px;
+    padding: 0 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background 0.15s, box-shadow 0.15s;
+}
+
+.btn-sm {
+    height: 28px;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.btn-primary {
+    background: #3b82f6;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #2563eb;
+}
+
+.btn-danger {
+    background: #ef4444;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: #dc2626;
+}
+
+.btn-outline {
+    background: #fff;
+    color: #475569;
+    border: 1px solid #cbd5e1;
+}
+
+.btn-outline:hover {
+    background: #f1f5f9;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    padding-top: 4px;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* ----------------------- Status Message ----------------------- */
+.status-msg {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.status-msg.success {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.status-msg.error {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.hidden {
+    display: none;
+}

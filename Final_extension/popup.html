@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salesforce Token Tester</title>
+    <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+    <div class="popup-container">
+        <!-- Header -->
+        <header class="popup-header">
+            <h1>Salesforce Token Tester</h1>
+            <p class="subtitle">Replace tokens &amp; preview email templates</p>
+        </header>
+
+        <!-- Default Token Fields -->
+        <section class="section">
+            <h2 class="section-title">Token Values</h2>
+
+            <div class="field">
+                <label for="userName">userName</label>
+                <input
+                    type="text"
+                    id="userName"
+                    data-token="{{userName}}"
+                    placeholder="e.g. Saurabh"
+                />
+            </div>
+
+            <div class="field">
+                <label for="userEmailAddress">userEmailAddress</label>
+                <input
+                    type="email"
+                    id="userEmailAddress"
+                    data-token="{{userEmailAddress}}"
+                    placeholder="e.g. user@example.com"
+                />
+            </div>
+
+            <div class="field">
+                <label for="userPhone">User.Phone</label>
+                <input
+                    type="tel"
+                    id="userPhone"
+                    data-token="{{User.Phone}}"
+                    placeholder="e.g. +91(70047)36926"
+                />
+            </div>
+
+            <div class="field">
+                <label for="accLname">accLname</label>
+                <input
+                    type="text"
+                    id="accLname"
+                    data-token="{{accLname}}"
+                    placeholder="e.g. Madhukar"
+                />
+            </div>
+
+            <div class="field">
+                <label for="unsubLink">Unsubscribe Link</label>
+                <input
+                    type="url"
+                    id="unsubLink"
+                    data-token="{{unsubscribe_product_link[,UnsubscribeComm]}}"
+                    placeholder="e.g. https://unsubscribe.example.com/"
+                />
+            </div>
+
+            <div class="field">
+                <label for="userPhoto">User Photo URL</label>
+                <input
+                    type="url"
+                    id="userPhoto"
+                    data-token="{{userPhoto}}"
+                    placeholder="e.g. https://example.com/photo.png"
+                />
+                <span class="hint">
+                    Leave blank to use a default placeholder image.
+                </span>
+            </div>
+        </section>
+
+        <!-- Custom Tokens Section -->
+        <section class="section">
+            <h2 class="section-title">Custom Tokens <span class="badge">Optional</span></h2>
+            <p class="hint">Add extra token &rarr; value pairs beyond the defaults.</p>
+
+            <div id="customTokensList"></div>
+
+            <button type="button" id="addCustomBtn" class="btn btn-outline btn-sm">
+                + Add Token
+            </button>
+        </section>
+
+        <!-- Action Buttons -->
+        <div class="actions">
+            <button type="button" id="disableBtn" class="btn btn-danger">
+                Disable
+            </button>
+            <button type="button" id="resetBtn" class="btn btn-outline">
+                Reset Defaults
+            </button>
+            <button type="button" id="applyBtn" class="btn btn-primary">
+                Save &amp; Apply
+            </button>
+        </div>
+
+        <!-- Status Message -->
+        <div id="statusMsg" class="status-msg hidden"></div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
