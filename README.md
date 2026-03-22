@@ -110,11 +110,11 @@ Click the **Reset Defaults** button to restore all six built-in token fields to 
 
 | Token | Default Value | Description |
 |---|---|---|
-| `{{userName}}` | `Saurabh` | Recipient's first name |
-| `{{userEmailAddress}}` | `Saurabh.madhukar@sanofi.com` | Recipient's email address |
+| `{{userName}}` | `xxxxxxx` | Recipient's first name |
+| `{{userEmailAddress}}` | `XXXXX.XXXX@XXXXXi.com` | Recipient's email address |
 | `{{User.Phone}}` | `+91(70047)36926` | Recipient's phone number |
-| `{{accLname}}` | `Madhukar` | Account last name |
-| `{{unsubscribe_product_link[,UnsubscribeComm]}}` | `https://unsubscribe.sanofi.us/` | Unsubscribe URL |
+| `{{accLname}}` | `XXXXXXX` | Account last name |
+| `{{unsubscribe_product_link[,UnsubscribeComm]}}` | `https://unsubscribe.XXXX.us/` | Unsubscribe URL |
 | `{{userPhoto}}` | Placeholder 100x100 image | User profile photo (rendered as an `<img>` tag) |
 
 The `{{userPhoto}}` token is special: you enter a plain image URL in the popup, and the extension wraps it in a `100x100` inline `<img>` tag before injecting it into the page.
