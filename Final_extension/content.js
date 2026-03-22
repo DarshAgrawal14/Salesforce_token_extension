@@ -20,11 +20,11 @@
     /*  Default token map                                                  */
     /* ------------------------------------------------------------------ */
     const DEFAULT_TOKEN_MAP = {
-        "{{userName}}":        "Saurabh",
-        "{{userEmailAddress}}": "Saurabh.madhukar@sanofi.com",
+        "{{userName}}":        "Rahul",
+        "{{userEmailAddress}}": "Rahul.stacy@gmail.com",
         "{{User.Phone}}":      "+91(70047)36926",
-        "{{accLname}}":        "Madhukar",
-        "{{unsubscribe_product_link[,UnsubscribeComm]}}": "https://unsubscribe.sanofi.us/",
+        "{{accLname}}":        "stacy",
+        "{{unsubscribe_product_link[,UnsubscribeComm]}}": "https://unsubscribe.company.us/",
         "{{userPhoto}}":
             '<img style="display:inline-block;width:100px;height:100px;" ' +
             'src="https://www.dummyimage.com/100.png" alt="User Photo">'
